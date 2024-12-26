@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Картинка книги -->
+    <ImageView
+        android:id="@+id/book_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <!-- Сокращенное название книги -->
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Сокращенный автор -->
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Сокращенный жанр -->
+    <TextView
+        android:id="@+id/book_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Сокращенное описание -->
+    <TextView
+        android:id="@+id/book_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Полное описание (которое будет показываться по нажатию) -->
+    <TextView
+        android:id="@+id/book_full_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full description of the book"
+        android:visibility="gone" />
+
+    <!-- Кнопка удаления книги -->
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+</LinearLayout>
